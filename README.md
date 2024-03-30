@@ -1,4 +1,4 @@
-# AiVerseAPI
+# AI Verse API
 
 The API for [AI Verse](https://github.com/robertmok/ai-verse)
 
