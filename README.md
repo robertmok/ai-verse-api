@@ -1,6 +1,7 @@
 # AI Verse API
 
 The API for [AI Verse](https://github.com/robertmok/ai-verse)
+**Note:** It is possible to just hit the Ollama REST API from the frontend without going through this API.
 
 ![](./demo.JPG)
 
@@ -23,6 +24,7 @@ The API for [AI Verse](https://github.com/robertmok/ai-verse)
 
 ## Future
 
+- alternative to not use SignalR and just send server-sent events (event-stream) from API.
 - add support to use any LLMs
 - Dockerfile
 
