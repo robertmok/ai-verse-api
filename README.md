@@ -25,7 +25,7 @@ The API for [AI Verse](https://github.com/robertmok/ai-verse)
 
 ## Limitations
 
-- no cancel for generating response once started
+- no cancellation when it is generating response
 
 ## Future
 
