@@ -1,3 +1,5 @@
+using SignalRWebpack.Hubs;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +8,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddHttpLogging(o => { });
+
+builder.Services.AddSignalR();
 
 var app = builder.Build();
 
@@ -20,6 +26,17 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.UseCors(options =>
+    options.WithOrigins("http://localhost:4200")
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials()
+);
+
+app.UseHttpLogging();
+
 app.MapControllers();
+
+app.MapHub<AiChatHub>("/hub");
 
 app.Run();
