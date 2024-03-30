@@ -48,7 +48,7 @@ namespace AiAPI.Controllers
         [HttpPost("postStreamChat")]
         public async IAsyncEnumerable<ChatResponse?> PostOllamaStreamChatAsync(List<Message> history, string model)
         {
-            System.Diagnostics.Debug.WriteLine(">>>> " + history[0].content);
+            //System.Diagnostics.Debug.WriteLine(">>>> " + history[0].content);
             var chatRequest = new OllamaChatRequest()
             {
                 messages = history,
