@@ -23,6 +23,10 @@ The API for [AI Verse](https://github.com/robertmok/ai-verse)
 	- SignalR hub will be running on https://localhost:7202/hub
 - Follow the **Setup** section in [AI Verse](https://github.com/robertmok/ai-verse)
 
+## Limitations
+
+- no cancel for generating response once started
+
 ## Future
 
 - alternative to not use SignalR and just send server-sent events (event-stream) from API.
