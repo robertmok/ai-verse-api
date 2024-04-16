@@ -2,8 +2,6 @@
 
 The API for [AI Verse](https://github.com/robertmok/ai-verse)
 
-**Note:** It is possible to just hit the Ollama REST API from the frontend without going through this API.
-
 ![](./demo.JPG)
 
 ## Setup
