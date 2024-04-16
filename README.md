@@ -23,11 +23,12 @@ The API for [AI Verse](https://github.com/robertmok/ai-verse). It uses **ASP.NET
 
 ## Limitations
 
-- no cancellation when it is generating response
+- No cancellation when it is generating response.
+- The response are send globally to all connected clients in SignalR. It is not client or connection specific.
 
 ## Future
 
-- alternative to not use SignalR and just send server-sent events (event-stream) from API.
-- add support to use any LLMs
+- Alternative to not use SignalR and just send server-sent events (event-stream) from API.
+- Add support to use any LLMs
 - Dockerfile
 
