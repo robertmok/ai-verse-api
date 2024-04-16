@@ -1,6 +1,6 @@
 # AI Verse API
 
-The API for [AI Verse](https://github.com/robertmok/ai-verse)
+The API for [AI Verse](https://github.com/robertmok/ai-verse). It uses **ASP.NET Core Web API** and **SignalR** for real time data.
 
 ![](./demo.JPG)
 
